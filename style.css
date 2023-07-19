@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Poppinsitalic;
+    src: url(./assets/fonts/Poppins-Italic.ttf);
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: PoppinsExtraBold;
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: PoppinsExtraBoldItalic;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+    height: 90vh;
+}
+
+.table {
+    background-color: #fff;
+    width: 500px;
+    height: 65vh;
+    border-radius: 10px 10px 50px 10px;
+}
+
+.dform {
+    display: flex;
+}
+
+.dform > div {
+    font-family: PoppinsBold;
+    color: #787878;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    margin: 20px;
+}
+
+input {
+    height: 40px;
+    padding: 10px;
+    width: 90px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-family: PoppinsExtraBold;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.dbutton {
+    display: flex;
+}
+
+.linea {
+    border-top: 1px solid #d1d1d1;
+    height: 2px;
+    width: 90%;
+    display: flex;
+    padding: 0;
+    margin: 20px 0 0 25px;
+    align-items: center;
+    justify-content: end;
+}
+
+.ibutton {
+    background-image: url('./assets/images/icon-arrow.svg');
+    background-size: 50%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    background-color: #864cfe;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.ibutton:hover {
+    background-color: #000;
+}
+
+.ibutton:active {
+    background-color: #000;
+}
+
+.resultado {
+    font-family: PoppinsExtraBoldItalic;
+    font-size: 3em;
+    margin-left: 20px;
+    line-height: 50px;
+}
+
+.num {
+    color: #864cfe;
+}
+
+.error {
+    color: red;
+    font-size: 1em;
+    font-family: PoppinsItalic;
+    letter-spacing: normal;
+    margin-top: 5px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px) {
+    .table {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .dform {
+        justify-content: center;
+    }
+
+    .dform > div {
+        margin: 20px 10px 20px 10px;
+    }
+
+    input {
+        height: 40px;
+        width: 100%;
+    }
+
+    .linea {
+        margin: 20px 0 40px 25px;
+        justify-content: center;
+    }
+
+}
